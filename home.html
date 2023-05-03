@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>tetris</h1>
+    <div id="container">
+        <div id="gameover">
+            <h2>GAME OVER!</h2>
+            <a href="#" id="gameover-retry">Retry</a>
+        </div>
+        <canvas id="canvas" height="400" width="300"></canvas>
+        <div class="score">
+            Session Highscore: <span id="c-score">0 in level 0</span>
+            <br>
+            All-Time Highscore: <span id="a-score">0 in level 0</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <h3>Controls</h3>
+        <ul>
+            <li><span><kbd>Space</kbd>/<kbd>↑</kbd>/<kbd>W</kbd></span> turn clockwise</li>
+            <li><span><kbd>←</kbd>/<kbd>A</kbd></span> move left</li>
+            <li><span><kbd>→</kbd>/<kbd>D</kbd></span> move right</li>
+            <li><span><kbd>↓</kbd>/<kbd>S</kbd></span> fall faster</li>
+        </ul>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
